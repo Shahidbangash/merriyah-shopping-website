@@ -151,6 +151,8 @@ nav li:last-child {
     position: relative;
     /* background:url("/images/9792171e491143741f9e25fd81707ffb.png") ; */
     background-color:  linear-gradient(to top, black, white);
+    background: #CECECE url("/images/9792171e491143741f9e25fd81707ffb.png") 20px 50% no-repeat; ;
+
     /* background:  */
     /* background-image: radial-gradient(to bottom,black, green); */
 
@@ -243,7 +245,7 @@ nav li:last-child {
 
 .my-card-padding {
     /* padding: 10px 10px; */
-    /* margin: 10px 20px; */
+    margin: 10px 20px;
 }
 
 
@@ -259,8 +261,6 @@ nav li:last-child {
     justify-content: center;
     align-items: center;
     margin: 20px;
-    font-size: 14;
-    font-family: "Quicksand";
 
 }
 
@@ -270,4 +270,156 @@ nav li:last-child {
 .card-slider{
     /* background: linear-gradient(to right,#1985F2, #F751B9 ); */
     background-image: linear-gradient(to right, rgba(25,133,242,0.1), rgba(247,81,185,0.1));
+
 }
+/* for styling greater and less than icons */
+.style-button i{
+    font-size: 55px;
+    color: #e91c6a;
+    
+}
+
+/* card slider finsih here with carosel   */
+
+
+.divider{
+    color: black;
+}
+
+.top-seller-card-design img{
+    position: relative;
+
+}
+
+.top-seller-card-design h2{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    transform: translate(40px,-180px);
+
+}
+
+.top-seller-card-design h3{
+    position: absolute;
+    font-size: 16px;
+    color: white;
+    transform: translate(40px,-120px);
+    
+}
+
+.top-seller-card-design button{
+    position: absolute;
+    text-transform: uppercase;
+    transform: translate(150%,-50px);
+    /* max-width: 150px; */
+    background-color: #e91c6a;
+    border-color: #e91c6a;
+    color: white;
+    min-width: 150px;
+}
+
+
+/* promo Card design  */
+
+.promo-card-design{
+    position: relative;
+    margin: 0 !important;
+    padding: 0 !important;
+
+}
+
+.promo-card-design img{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.promo-card-design h1{
+    position: absolute;
+    font-size: 165px;
+    color: #514F62;
+    transform: translate(170px, -480px);
+    /* transform: translate(30px, 200px); */
+}
+.promo-card-design h1 span{
+    font-size: 105px;
+}
+
+
+.promo-card-design h2{
+    position: absolute;
+    text-transform: capitalize;
+    font-size: 30px;
+    color: #e91c6a;
+    transform: translate(200px, -300px);
+    /* transform: translate(30px, 200px); */
+}
+
+.promo-card-design h2 strong{
+    font-size: 42px;
+    text-transform: uppercase;
+}
+
+.promo-card-design button{
+    /* position: absolute; */
+    color: white;
+    background-color: #e91c6a;
+    text-transform: uppercase;
+    font-size: 16px;
+    border-color: #e91c6a;
+    min-width: 150px;
+    min-height: 37px;
+    transform: translate(250px, -220px);
+}
+
+/* AMbassador part  */
+
+
+.ambassadors {
+    color: #ccc;
+    width: 100%;
+    margin: 10px auto;
+    overflow: hidden;
+    text-align: center;
+    line-height: 1.2em;
+}
+
+.ambassadors:after {
+    content: "";
+    vertical-align: middle;
+    display: inline-block;
+    width: 50%;
+    border-bottom: 2px dashed #e91c6a;
+    /* margin: 0 2% 0 -55%; */
+}
+
+.ambassadors:after {
+    margin: 0 -55% 0 2%;
+}
+
+
+.my-card-special{
+    display: flex;
+    flex-direction: row;
+    flex-wrap : auto;
+    /* max-width:27% ; */
+    /* max-height: 555px; */
+    
+}
+
+.wrapper-card{
+    display: flex;
+
+}
+
+/* Footer Section here  */
+
+.page-footer{
+    background-color: #514F62;
+}
+
+
+/* .promo-card-design h1 { */
+    /* display: inline; */
+    /* font-size: 80px; */
+/* } */
