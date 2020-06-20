@@ -397,14 +397,66 @@ nav li:last-child {
     margin: 0 -55% 0 2%;
 }
 
+.card-wrap{
 
-.my-card-special{
     display: flex;
     flex-direction: row;
-    flex-wrap : auto;
+    flex-wrap : wrap;
+    /* margin-left: 20px; */
+    margin-left: 150px;
+
+}
+
+
+.my-card-special{
     /* max-width:27% ; */
     /* max-height: 555px; */
-    
+
+    border: 1px solid red;
+    background-color: #ffffff;
+    min-width: 30%;
+    margin: 20px;
+}
+.my-card-special img {
+    width: 100%;
+}
+
+.my-card-special h2{
+    color: #e91c6a;
+    align-content: center;
+    text-align: center;
+    /* margin-left: auto; */
+}
+
+.username-section{
+    border: 2px solid black;
+    border-radius: 24px;
+    width: 170px;
+    height: 27px;
+    /* padding: 10px auto; */
+    margin: 0 auto;
+    /* max-width: 100px; */
+}
+
+.username-section h3{
+    font-size: 15px;
+    color: #6F6F6F;
+}
+
+.my-card-special button{
+    /* align-items: center; */
+    text-align: center;
+    margin: 20px auto;
+    color: white;
+    background-color: #e91c6a;
+    border-color: #e91c6a;
+    width: 185px;
+    height: 37px;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+
+    /* transform: translate(60%, 100%); */
 }
 
 .wrapper-card{
@@ -416,6 +468,56 @@ nav li:last-child {
 
 .page-footer{
     background-color: #514F62;
+    
+}
+
+.page-footer h5{
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.page-footer a{
+    color: white;
+
+}
+
+.page-footer input[type=email]{
+    border: 1px  solid white;
+    border-radius: 16px   0px  0px 16px ;
+    margin-right: 0px;
+}
+
+.page-footer input[type=submit]{
+    background-color: #e91c6a;
+    color: #ffffff;
+    /* min-width: 80px; */
+    border: 1px  solid #e91c6a;
+    border-radius: 0px   16px  16px 0px ;
+    margin-left: 0px;
+
+}
+
+
+.page-footer input::placeholder{
+    color: #6F6F6F;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+
+
+/* last colum */
+
+
+.colum-3-style h3{
+    font-size: 17px;
+    color: white;
+    font-weight: lighter;
+
 }
 
 
