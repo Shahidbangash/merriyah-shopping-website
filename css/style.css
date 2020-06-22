@@ -1,4 +1,6 @@
-
+html{
+    font-size: 16px;
+}
 
 /* Header with navigation Startas here  */
 
@@ -48,62 +50,67 @@ nav li:last-child {
 /* Carosel section start here  */
 
 
-/* media query for medium devices  */
-
-@media (max-width: 599px) {
-
-    /* query to reduce picture size in carosel */
-    .div-poss {
-        max-width: 569px;
-        bottom: 15%;
-    }
-    /* querry to decrease button size  in carosel*/
-    
-    .div-poss button {
-        width: auto;
-        margin: 0.4em auto;
-    }
+.image-wrapper{
+    position: relative;
 }
-
 
 .div-poss {
-    max-width: 570px;   
     position: absolute;
+    top: 20%;
+    left: 10%;
     color: white;
+    
 }
 
-@media screen and (min-width: 600px) {
-    .div-poss {
-        transform: translate(0px, -60%);
-    }
-    .div-poss button {
-        /* margin: 0.6em auto; */
-        width: 50%;
+@media only screen and (min-width: 601px){
+
+    
+    .div-poss button{
+        display: block;
+        position: absolute;
+        left: 10%;
+        margin-top: 4%;
+        height: 37px;
+        top: 40%;
+        
+        /* width: 6vw; */
+        /* bottom: 30%; */
     }
 }
+
+@media only screen and (max-width: 600px) {
+
+    .div-poss button{
+        display: block;
+        position: absolute;
+        width: 100px;
+        height: 30px;
+        left: 0;
+        height: 37px;
+    
+        /* bottom: 30%; */
+        /* margin-top: 4%; */
+        /* bottom: 2px; */
+        /* width: 6vw; */
+        /* top: 40%; */
+    }
+
+}
+
+.div-poss h2{
+    font-family: "Quicksand";
+    font-weight: 700;
+    font-size: 3vw;
+    text-align: start;
+   
+}
+
+
+
+
 
 /* Inside carosel section  */
 
-
-/* heading over image in carosel  for large screen*/
-
-.picture-heading {
-    font-family: "Quicksand";
-    font-weight: 700;
-    font-size: 65px;
-    /* font-size: 5vw; */
-    text-align: start;
-    transform: translate(50px,-200px);
-}
-/* button position in carosel  */
-
-.div-poss button,
-.poss {
-    position: absolute;
-    left: 2%;
-    transform: translate(50px,-100px);
-    bottom: 10%;
-}
 
 
 
@@ -149,9 +156,9 @@ nav li:last-child {
     height: 100%;
     width: auto;
     position: relative;
-    /* background:url("/images/9792171e491143741f9e25fd81707ffb.png") ; */
     background-color:  linear-gradient(to top, black, white);
-    background: #CECECE url("/images/9792171e491143741f9e25fd81707ffb.png") 20px 50% no-repeat; ;
+    /* background:url("/images/9792171e491143741f9e25fd81707ffb.png") ; */
+    /* background: #CECECE url("/images/9792171e491143741f9e25fd81707ffb.png") 20px 50% no-repeat; ; */
 
     /* background:  */
     /* background-image: radial-gradient(to bottom,black, green); */
@@ -286,90 +293,113 @@ nav li:last-child {
     color: black;
 }
 
-.top-seller-card-design img{
+
+
+.top-seller-card-design{
     position: relative;
 
 }
+
+
 
 .top-seller-card-design h2{
     position: absolute;
     color: white;
     font-weight: bold;
-    font-size: 40px;
-    transform: translate(40px,-180px);
+    font-size: 2vw;
+    bottom: 30%;
+    left :10%;
+    /* transform: translate(10%,-40%); */
 
 }
 
 .top-seller-card-design h3{
-    position: absolute;
-    font-size: 16px;
+    /* position: absolute; */
+    font-size: 1vw;
     color: white;
-    transform: translate(40px,-120px);
+    /* transform: translate(40px,-120px); */
     
 }
 
 .top-seller-card-design button{
     position: absolute;
     text-transform: uppercase;
-    transform: translate(150%,-50px);
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    /* transform: translate(150%,-50px); */
     /* max-width: 150px; */
     background-color: #e91c6a;
     border-color: #e91c6a;
     color: white;
-    min-width: 150px;
+    min-width: 8vw;
+    
 }
 
-
+/* @media (min-width: 576px){
+    .top-seller-card-design button{
+        left: 55%;
+    }
+}
+@media (min-width: 576px){
+    .top-seller-card-design button{
+        left: 55%;
+    }
+} */
 /* promo Card design  */
 
 .promo-card-design{
     position: relative;
-    margin: 0 !important;
-    padding: 0 !important;
-
+}
+.promo-content-wrap{
+    position: absolute;
+    top: 12%;
+    left: 5%;
 }
 
-.promo-card-design img{
-    margin: 0 !important;
-    padding: 0 !important;
-}
 
 .promo-card-design h1{
-    position: absolute;
-    font-size: 165px;
+    font-size: 8vw;
     color: #514F62;
-    transform: translate(170px, -480px);
+    /* transform: translate(170px, -480px); */
     /* transform: translate(30px, 200px); */
 }
+
+
 .promo-card-design h1 span{
-    font-size: 105px;
+    font-size: 5vw;
+    /* position: absolute; */
 }
 
 
 .promo-card-design h2{
-    position: absolute;
     text-transform: capitalize;
-    font-size: 30px;
+    font-size: 2vw;
     color: #e91c6a;
-    transform: translate(200px, -300px);
+    /* transform: translate(200px, -300px); */
     /* transform: translate(30px, 200px); */
 }
 
 .promo-card-design h2 strong{
-    font-size: 42px;
+    font-size: 3vw;
     text-transform: uppercase;
+}
+.promo-image{
+width: 100%;
 }
 
 .promo-card-design button{
-    /* position: absolute; */
+    position: absolute;
+    left: 25%;
     color: white;
     background-color: #e91c6a;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 1vw;
     border-color: #e91c6a;
-    min-width: 150px;
-    min-height: 37px;
-    transform: translate(250px, -220px);
+    min-width: 5vw;
+    min-height: 2vw;
+    /* transform: translate(250px, -220px); */
 }
 
 /* AMbassador part  */
@@ -486,12 +516,14 @@ nav li:last-child {
 .page-footer input[type=email]{
     border: 1px  solid white;
     border-radius: 16px   0px  0px 16px ;
+    display: inline;
     margin-right: 0px;
 }
 
 .page-footer input[type=submit]{
     background-color: #e91c6a;
     color: #ffffff;
+    display: inline;
     /* min-width: 80px; */
     border: 1px  solid #e91c6a;
     border-radius: 0px   16px  16px 0px ;
@@ -514,14 +546,9 @@ nav li:last-child {
 
 
 .colum-3-style h3{
-    font-size: 17px;
+    font-size: 0.5vw;
     color: white;
     font-weight: lighter;
 
 }
 
-
-/* .promo-card-design h1 { */
-    /* display: inline; */
-    /* font-size: 80px; */
-/* } */
